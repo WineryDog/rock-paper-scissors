@@ -37,19 +37,16 @@ function playRound(computerChoice,playerChoice) {
     if (playerChoice === computerChoice) {
         console.log(playerChoice + " vs " + computerChoice + " - DRAW!");
         draws++;
-        console.log(draws);
     }
     // WIN CASE
     else if (playerChoice === "Rock" && computerChoice === "Scissors" || playerChoice === "Scissors" && computerChoice === "Paper" || playerChoice === "Paper" && computerChoice === "Rock") {
         console.log("YOU WIN! " + playerChoice + " beats " + computerChoice);
         playerScore++;
-        console.log(playerScore);
     }
     // LOSE CASE
     else if (computerChoice === "Rock" && playerChoice === "Scissors" || computerChoice === "Scissors" && playerChoice === "Paper" || computerChoice === "Paper" && playerChoice === "Rock") {
         console.log("YOU LOSE! " + computerChoice + " beats " + playerChoice);
         computerScore++;
-        console.log(computerScore);
     }
   }
 
